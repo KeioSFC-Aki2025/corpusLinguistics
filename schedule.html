@@ -1135,7 +1135,7 @@ function openSubTab(evt, subName) {
 }
 </script>
 </head>
-<body>
+<body class="is-en">
     <div class="gnav-header">
         <span class="lang-en"><h1 class="gnav-title">Akitaka Yamada's Website</h1></span>
         <span class="lang-ja"><p class="gnav-title">山田彬尭のウェブサイトへようこそ！</p></span>
@@ -1186,12 +1186,9 @@ function openSubTab(evt, subName) {
 <div class="tabs-container">
  <ul class="tab-menu">
   <li><button onclick="openTab(event, 'summary')"><span class="lang-ja">概要</span><span class="lang-en">Overview</span></button></li>
-  <li><button onclick="openTab(event, 'caution-grid')"><span class="lang-ja">履修条件</span><span class="lang-en">Prerequisites</span></button></li>
   <li><button onclick="openTab(event, 'study')"><span class="lang-ja">予習</span><span class="lang-en">Assignments</span></button></li>
   <li><button onclick="openTab(event, 'grades')"><span class="lang-ja">成績</span><span class="lang-en">Evaluation</span></button></li>
-  <li><button onclick="openTab(event, 'firstClass')"><span class="lang-ja">ガイダンス</span><span class="lang-en">Guidance</span></button></li>
   <li><button class="active" onclick="openTab(event, 'schedule')"><span class="lang-ja">日程</span><span class="lang-en">Schedule</span></button></li>
-  <li><button onclick="openTab(event, 'news')"><span class="lang-ja">お知らせ</span><span class="lang-en">Notes</span></button></li>
   <li><button onclick="openTab(event, 'subjects')"><span class="lang-ja">関連科目</span><span class="lang-en">Related Courses</span></button></li>
 </ul>
 <div id="summary" class="tab-content">
@@ -1199,7 +1196,7 @@ function openSubTab(evt, subName) {
     <div class="summary-card" style="border-top-color: #3182ce;">
       <h3>📚<span class="lang-ja"> 【内容】 コーパス分析と論文執筆</span><span class="lang-en">Corpus Analysis and Academic Writing</span></h3>
       <p>
-        <span class="lang-ja">グループごとにリサーチクエスチョンを立て、コーパスを利活用して、定量的分析を行い、その結果をプレゼン、および、論文という形で執筆する。</span><span class="lang-en">Students will formulate research questions within their respective groups, utilize corpora to conduct quantitative analyses, and present their findings through both an oral presentation and a written research paper.</span>
+        <span class="lang-ja">グループごとにリサーチクエスチョンを立て、コーパスを利活用して、分析を行い、その結果をプレゼン、および、論文という形で執筆する。</span><span class="lang-en">Students will formulate research questions within their respective groups, utilize corpora to conduct linguistic analyses, and present their findings through both an oral presentation and a written research paper.</span>
       </p>
     </div>
     <div class="summary-card" style="border-top-color: #38a169;">
@@ -1207,13 +1204,13 @@ function openSubTab(evt, subName) {
       <p>
         <!-- 日本語のリスト構造 -->
 <ul class="lang-ja">
-    <li>- Rを用いたテキストデータの解析</li>
+    <li>- KeioSFC (X-search), KeioXML Editorを用いたテキストデータの解析</li>
     <li>- テキストデータの定量分析</li>
     <li>- 言語学における論文執筆の基礎</li>
 </ul>
 <!-- 英語のリスト構造 -->
 <ul class="lang-en">
-    <li>- Analyzing text data using R</li>
+    <li>- Analyzing text data using KeioSFC (X-search), KeioXML Editor</li>
     <li>- Introductory data analysis for text data</li>
     <li>- Foundations of research paper writing in linguistics</li>
 </ul>
@@ -1222,8 +1219,8 @@ function openSubTab(evt, subName) {
     </div>
     <div class="summary-card" style="border-top-color: #ed8936;">
       <h3>🔄 <span class="lang-ja">【方法】 プリント＆ハンズオン</span><span class="lang-en">Method: Handouts & Hands-on Practice</span></h3>
-<p class="lang-ja">プリントで研究や統計のノウハウを学び、Rを用いたハンズオンのテキスト解析も学びます。</p>
-<p class="lang-en">Students will learn research and statistical expertise through handouts, as well as gain hands-on experience in text analysis using R.</p>
+<p class="lang-ja">プリントで研究や統計のノウハウを学び、ハンズオンのテキスト解析も学びます。</p>
+<p class="lang-en">Students will learn research and statistical expertise through handouts, as well as gain hands-on experience in text analysis.</p>
     </div>
     <div class="summary-card" style="border-top-color: #718096;">
       <h3>👤 <span class="lang-ja">【担当教員】 山田 彬尭</span><span class="lang-en">Akitaka Yamada (he/him)</span></h3>
@@ -1239,164 +1236,102 @@ function openSubTab(evt, subName) {
 </div>
 <div id="grades" class="tab-content">
     
-		
-    <div class="column-header">■ 成績評価・単位修得の基準</div>
+				
+    <div class="column-header">
+      <span class="lang-ja">■ 成績評価・単位修得の基準</span>
+      <span class="lang-en">■ Grading and Credit Requirements</span>
+    </div>
     <table class="data-table">
       <thead>
         <tr>
-          <th>評価項目</th>
-          <th>内容</th>
-          <th class="center">配分比率</th>
-          <th class="center">不可条件</th>
+          <th>
+            <span class="lang-ja">評価項目</span>
+            <span class="lang-en">Assessment</span>
+          </th>
+          <th>
+            <span class="lang-ja">内容</span>
+            <span class="lang-en">Description</span>
+          </th>
+          <th class="center">
+            <span class="lang-ja">配分比率</span>
+            <span class="lang-en">Weight</span>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>宿題</th>
-          <td>授業内外の課題（平常点）</td>
+          <th>
+            <span class="lang-ja">宿題（個人点）</span>
+            <span class="lang-en">Homework (Individual)</span>
+          </th>
+          <td>
+            <span class="lang-ja">授業内外の課題</span>
+            <span class="lang-en">Assignments completed in and outside of class</span>
+          </td>
           <td class="val center red">30%</td>
-          <td class="condition red">未提出率 25%以上</td>
         </tr>
         <tr>
-          <th>中間テスト</th>
-          <td>学期中盤に実施する筆記試験</td>
-          <td class="val center red">25%</td>
-          <td class="condition red">未受験</td>
+          <th>
+            <span class="lang-ja">最終プレゼン発表（グループ）</span>
+            <span class="lang-en">Final Presentation (Group)</span>
+          </th>
+          <td>
+            <span class="lang-ja">学期末に実施する授業内発表</span>
+            <span class="lang-en">In-class presentation at the end of the semester</span>
+          </td>
+          <td class="val center red">30%</td>
         </tr>
         <tr>
-          <th>期末テスト</th>
-          <td>試験期間に実施する筆記試験</td>
-          <td class="val center red">45%</td>
-          <td class="condition red">未受験</td>
+          <th>
+            <span class="lang-ja">最終レポート（グループ）</span>
+            <span class="lang-en">Final Report (Group)</span>
+          </th>
+          <td>
+            <span class="lang-ja">学期末に提出するグループでの研究の成果報告書</span>
+            <span class="lang-en">A report presenting the results of the group's research, submitted at the end of the semester</span>
+          </td>
+          <td class="val center red">40%</td>
         </tr>
       </tbody>
       
     </table>
     <div class="deadline-footer">
-      <strong>中間テスト（筆記試験）予定日：</strong> 11月12日（金）13:00<br>
-      <strong>期末テスト（予定）：</strong> テスト期間（TBA）<br>
+      <strong>
+        <span class="lang-ja">グループプロジェクトについて</span>
+        <span class="lang-en">About the Group Project</span>
+      </strong>
+      <br>
+      <span class="lang-ja">
+        この授業ではグループを組んで、各グループが何か気になる言語現象をコーパスの解析を通して、分析します。プレゼンとレポートについては、同一グループメンバーは同じ点数を貰うことになります。最終成績は、宿題（個人点）とこのグループでの成績を合算して算出されます。
+      </span>
+      <span class="lang-en">
+        In this course, students work in groups to investigate a linguistic phenomenon of their interest through corpus analysis. All members of the same group receive the same score for the final presentation and report. The final grade is calculated by combining the individual homework score with the group project score.
+      </span>
     </div>
-	※中間テストの日は、進度に応じて（前）後の授業にずれることがあります。履修にあたって、予定が入っていないことを確認してください。
- 
  
 </div>
 </div>
 <div id="study" class="tab-content">
-  <div class="study">
-    <span class="main-text">この授業の予習は</span><br>
-   （たぶん、それなりに） 「<span class="alert-text">重たい</span>」です<br>
-   <br>
-   （でも、学期を終えるとその分、大きな<span class = "highlight"><b>充足感</b></span>が待っている（はず）！）
-  </div>
+  
   <div class="study-grid">
     <div class="study-item">
-      <h3>📺 （１）講義ビデオ（毎週）</h3>
-      <p>予習用ビデオは毎週<b>1時間〜1時間半</b>。内容を正確に把握するためのインプット作業です。</p>
+      <h3>📺 （１）Input-oriented Assigns.</h3>
+      <p>Reading assignments and corpus annotation. <span class="b">Approx. 1 hour / week</span></p>
     </div>
     <div class="study-item">
-      <h3>✍️ （２）提出課題（毎週）</h3>
-      <p>ビデオ内容の理解度を確認するためのアウトプット。知識を定着させる重要なステップです。</p>
-    </div>
-  </div>
-  <div class="study-notice">
-    <div class="icon">⏰</div>
-    <div class="text">
-      ノート作成や休憩時間を考慮すると、確実に<br>
-      <b>毎週2時間ほど</b>の学習時間を確保することが不可欠です。
+      <h3>✍️ （２）Output-oriented Assigns.</h3>
+      <p>Collaborative paper writing assignments outside of class.</p>
     </div>
   </div>
    
     
 </div>
-<div id="news" class="tab-content">
-  <strong>休講情報</strong>：なし<br>
-</div>
   
   
-  
-   
-  
-  
-<div id="firstClass" class="tab-content">
-  <div class="study-notice">
-    <div class="icon">💡</div>
-    <div class="text">
-      <span class="badge-important">重要</span> <b><span class="highlight">オンライン ガイダンス＆選抜課題</span></b><br>履修登録までに、①下記の「<span class="highlight">ビデオ</span>」を視聴し、②「<span class="highlight">選抜課題</span>」を提出してください。</b>
-    </div>
-  </div>
-  <span class="section-title">■ ビデオ：</span>
-  <div class="video-grid">
-    <a href="https://youtu.be/7M3Z0sKUxaA" class="button">1.1 はじめに（16:47)</a>
-    <a href="https://youtu.be/9oEq_prmo_c" class="button">1.2 縦の具体例（13:50）</a>
-    <a href="https://youtu.be/tBcHnV8wVDg" class="button">1.2 横の具体例（14:34）</a>
-    <a href="https://youtu.be/i-0-E3S8HSM" class="button">1.3 縦のむずかしさ（8:05）</a>
-    <a href="https://youtu.be/wkRZUBeaKUE" class="button">1.3 横のむずかしさ（27:22）</a>
-  </div>
-  <p class="note-text">※このようなビデオが毎週あるので（長さは1時間半くらいです）、そのようなスタイルが自分に合うかもチェックしてください。</p>
-  <div class="resources-wrapper">
-  <div class="resource-box">
-    <span class="section-title">■ 資料：</span>
-    <div class="file-area">
-      <a href="https://keiosfc-aki2025.github.io/semantics-and-pragmatics/Chapter-1-Introduction.pdf" class="button pdf-button">配布プリント (PDF)</a>
-    </div>
-  </div>
-  <div class="resource-box">
-    <span class="section-title">■ 選抜課題：慶應のシラバスに記載の提出先に課題をアップロードしてください</span>
-    <div class="file-area flex-row">
-      <a href="https://keiosfc-aki2025.github.io/semantics-and-pragmatics/選抜課題.docx" class="button docx-button">選抜課題 (docx)</a>
-      <a href="https://keiosfc-aki2025.github.io/semantics-and-pragmatics/選抜課題.pdf" class="button pdf-button">選抜課題 (pdf)</a>
-    </div>
-  </div>
-</div>
-</div>
-<div id="caution-grid" class="tab-content">
-  <div class="summary-grid">
-  <div class="caution-grid">
-    <div class="caution-card1 border-red">
-      <div class="card-header">
-        <div class="card-icon">🚫</div>
-        <span class="subject-title"><span class="badge-important">重要</span><span> </span>         ガイダンス動画＆選抜課題</span>
-      </div>
-      <div class="card-content">
-        履修登録前に「<a href="https://keiosfc-aki2025.github.io/syntax/schedule.html" class="link-small">ガイダンス動画</a> 」を視聴し、マッチングを測った後、選抜課題を提出。
-      </div>
-    </div>
-    <div class="caution-card border-green">
-      <div class="card-header">
-        <div class="card-icon">⏳</div>
-        <span class="subject-title">学習時間</span>
-      </div>
-      <div class="card-content">
-        反転授業形式のため予習が前提です。毎週、十分な予習・復習時間を確保してください。
-      </div>
-    </div>
-    <div class="caution-card border-blue">
-      <div class="card-header">
-        <div class="card-icon">📅</div>
-        <span class="subject-title">継続的な出席</span>
-      </div>
-      <div class="card-content">
-        出欠は取りませんが、内容の積み上げが強いため、欠席すると復帰が難しくなります。
-      </div>
-    </div>
-    <div class="caution-card border-orange">
-      <div class="card-header">
-        <div class="card-icon">🔢</div>
-        <span class="subject-title">論理的な思考力</span>
-      </div>
-      <div class="card-content">
-        暗記主体の授業ではありません。
-		与えられたデータをもとに、仮説の優劣を論理的に比較する能力が求められます。
-		
-      </div>
-    </div>
-</div>
-  </div>
-</div>
 <div id="subjects" class="tab-content">
     <ul class="sub-tab-menu">
-      <li><button class="sub-btn active" onclick="openSubTab(event, 'sub-instructor')">担当教員の授業一覧</button></li>
-      <li><button class="sub-btn" onclick="openSubTab(event, 'sub-table-list')">関連科目（リスト2026）</button></li>
+      <li><button class="sub-btn active" onclick="openSubTab(event, 'sub-instructor')"><span class="lang-ja">担当教員の授業一覧</span><span class="lang-en">Other classes taught by the instructor</span></button></li>
+      <li><button class="sub-btn" onclick="openSubTab(event, 'sub-table-list')"><span class="lang-ja">関連科目（リスト2026）</span><span class="lang-en">Related courses</span></button></li>
     </ul>
 	
 	<div id="sub-instructor" class="sub-tab-content active">
@@ -1405,32 +1340,66 @@ function openSubTab(evt, subName) {
     <div class="caution-card border-green">
       <div class="card-header">
 			<div class="card-icon">📑</div>
-				<span class="subject-title" >コーパス言語学　<a href="https://keiosfc-aki2025.github.io/corpusLinguistics/schedule.html" class="button btn-inline">🚀</a></span>
+				<span class="subject-title">
+					<span class="lang-ja">コーパス言語学</span>
+					<span class="lang-en">Corpus Linguistics</span>
+					<a href="https://keiosfc-aki2025.github.io/corpusLinguistics/schedule.html" class="button btn-inline">🚀</a>
+				</span>
 			</div>
-			<p style="text-align:right;"　> <span style="font-size: small ;">☆☆☆★★</span></p>
+			<p style="text-align:right;">
+				<span style="font-size: small;">☆☆☆★★</span>
+			</p>
 		<div class="card-content">
-			<b><span class="highlight">デジタル化されたテキストデータ</span></b>を用いて、ことばの特徴を探っていきます。GIGA/Project English Cとして開講され、英語で行われます。
+			<span class="lang-ja">
+				<b><span class="highlight">デジタル化されたテキストデータ</span></b>を用いて、ことばの特徴を探っていきます。GIGA/Project English Cとして開講され、英語で行われます。
+			</span>
+			<span class="lang-en">
+				Explore linguistic patterns using <b><span class="highlight">digitized text data</span></b>. This course is offered as GIGA/Project English C and is conducted in English.
+			</span>
 		</div>
     </div>
     <div class="caution-card border-green">
       <div class="card-header">
 			<div class="card-icon">🗣️</div>
-				<span class="subject-title" style="font-size: small ;">理論言語学（入門）音声学・音韻論・形態論　<a href="https://keiosfc-aki2025.github.io/morphology/schedule.html" class="button btn-inline">🚀</a></span>
+				<span class="subject-title" style="font-size: small;">
+					<span class="lang-ja">理論言語学（入門）音声学・音韻論・形態論</span>
+					<span class="lang-en">Introduction to Theoretical Linguistics: Phonetics, Phonology, and Morphology</span>
+					<a href="https://keiosfc-aki2025.github.io/morphology/schedule.html" class="button btn-inline">🚀</a>
+				</span>
 			</div>
-			<p style="text-align:right;"　> <span style="font-size: small ;">☆☆☆★★</span></p>
+			<p style="text-align:right;">
+				<span style="font-size: small;">☆☆☆★★</span>
+			</p>
 		<div class="card-content">
-			<b><span class="highlight">単語レベル</span></b>における階層構造とルールについて、音への知識を重視しつつ学びます。ことばの意味というよりは言葉の形に焦点を当てています。GIGA/Project English Cとして開講され、英語で行われます。
+			<span class="lang-ja">
+				<b><span class="highlight">単語レベル</span></b>における階層構造とルールについて、音への知識を重視しつつ学びます。ことばの意味というよりは言葉の形に焦点を当てています。GIGA/Project English Cとして開講され、英語で行われます。
+			</span>
+			<span class="lang-en">
+				Learn about hierarchical structures and rules at the <b><span class="highlight">word level</span></b>, with a particular focus on the sound structure of language. The course focuses on linguistic form rather than meaning. It is offered as GIGA/Project English C and is conducted in English.
+			</span>
 		</div>
     </div>
+	
 	
     <div class="caution-card border-red">
       <div class="card-header">
 			<div class="card-icon">🏠</div>
-				<span class="subject-title">理論言語学（入門）統語論　<a href="https://keiosfc-aki2025.github.io/syntax/schedule.html" class="button btn-inline">🚀</a></span>
+				<span class="subject-title">
+					<span class="lang-ja">理論言語学（入門）統語論</span>
+					<span class="lang-en">Introduction to Theoretical Linguistics: Syntax</span>
+					<a href="https://keiosfc-aki2025.github.io/syntax/schedule.html" class="button btn-inline">🚀</a>
+				</span>
 			</div>
-			<p style="text-align:right;"　> <span style="font-size: small ;">☆☆★★★</span></p>
+			<p style="text-align:right;">
+				<span style="font-size: small;">☆☆★★★</span>
+			</p>
 		<div class="card-content">
-			<b><span class="highlight">文レベル</span></b>における階層構造とルールを学びます。ことばの意味というよりは言葉の形に焦点を当てています。GIGAとして開講され、英語で行われます。
+			<span class="lang-ja">
+				<b><span class="highlight">文レベル</span></b>における階層構造とルールを学びます。ことばの意味というよりは言葉の形に焦点を当てています。GIGAとして開講され、英語で行われます。
+			</span>
+			<span class="lang-en">
+				Learn about hierarchical structures and rules at the <b><span class="highlight">sentence level</span></b>. The course focuses on linguistic form rather than meaning. It is offered as a GIGA course and is conducted in English.
+			</span>
 		</div>
     </div>
 	
@@ -1438,11 +1407,22 @@ function openSubTab(evt, subName) {
     <div class="caution-card border-brown">
       <div class="card-header">
 			<div class="card-icon">💭</div>
-				<span class="subject-title">理論言語学（入門）意味論/語用論　<a href="https://keiosfc-aki2025.github.io/semantics-and-pragmatics/schedule.html" class="button btn-inline">🚀</a></span>
+				<span class="subject-title">
+					<span class="lang-ja">理論言語学（入門）意味論/語用論</span>
+					<span class="lang-en">Introduction to Theoretical Linguistics: Semantics and Pragmatics</span>
+					<a href="https://keiosfc-aki2025.github.io/semantics-and-pragmatics/schedule.html" class="button btn-inline">🚀</a>
+				</span>
 			</div>
 		<div class="card-content">
-					<p style="text-align:right;"　> <span style="font-size: small ;">☆★★★★</span></p>
-			<b><span class="highlight">単語・文・文脈</span></b>におけることば意味の分析の仕方を学びます。大学院併設の先端研究の授業ですので、難しい内容を一部含みます。日本語で行われます。
+			<p style="text-align:right;">
+				<span style="font-size: small;">☆★★★★</span>
+			</p>
+			<span class="lang-ja">
+				<b><span class="highlight">単語・文・文脈</span></b>におけることば意味の分析の仕方を学びます。大学院併設の先端研究の授業ですので、難しい内容を一部含みます。日本語で行われます。
+			</span>
+			<span class="lang-en">
+				Learn how to analyze linguistic meaning at the levels of <b><span class="highlight">words, sentences, and contexts</span></b>. As an advanced course connected to the graduate program, some of the material is challenging. The course is conducted in Japanese.
+			</span>
 		</div>
     </div>
 	
@@ -1450,21 +1430,45 @@ function openSubTab(evt, subName) {
     <div class="caution-card border-blue">
       <div class="card-header">
 			<div class="card-icon">🧪️</div>
-				<span class="subject-title">研究会 B1：理論言語学実践　<a href="https://keiosfc-aki2025.github.io/Seminar/SeminarProfile.html" class="button btn-inline">🚀</a></div>
-				<p style="text-align:right;"　> <span style="font-size: small ;">★★★★★</span></p>
+				<span class="subject-title">
+					<span class="lang-ja">研究会 B1：理論言語学実践</span>
+					<span class="lang-en">Seminar B1: Theoretical Linguistics in Practice</span>
+					<a href="https://keiosfc-aki2025.github.io/Seminar/SeminarProfile.html" class="button btn-inline">🚀</a>
+				</span>
+			</div>
+			<p style="text-align:right;">
+				<span style="font-size: small;">★★★★★</span>
+			</p>
 		<div class="card-content">
-			理論言語学（入門）で習った知識をもとに、<b><span class="highlight">先行研究</span></b>を読み、より深い言語分析を行います。
+			<span class="lang-ja">
+				理論言語学（入門）で習った知識をもとに、<b><span class="highlight">先行研究</span></b>を読み、より深い言語分析を行います。
+			</span>
+			<span class="lang-en">
+				Building on the knowledge acquired in Introduction to Theoretical Linguistics, students read <b><span class="highlight">previous research</span></b> and conduct more in-depth linguistic analyses.
+			</span>
 		</div>
     </div>
     <div class="caution-card border-orange">
       <div class="card-header">
 			<div class="card-icon">🌍️</div>
-				<span class="subject-title">研究会 B2：言語×DH×FW　<a href="https://keiosfc-aki2025.github.io/SeminarLDF/SeminarProfile.html" class="button btn-inline">🚀</a></div>
+				<span class="subject-title">
+					<span class="lang-ja">研究会 B2：言語×DH×FW</span>
+					<span class="lang-en">Seminar B2: Language × DH × Fieldwork</span>
+					<a href="https://keiosfc-aki2025.github.io/SeminarLDF/SeminarProfile.html" class="button btn-inline">🚀</a>
+				</span>
+			</div>
 				
-				<p style="text-align:right;"　> <span style="font-size: small ;">★★★★★</span></p>
-		<div class="card-content">言語実験やコーパスなど、生の<b><span class="highlight">データ</span></b>を採取し、<b><span class="highlight">定量的分析</span></b>を行う言語研究の方法論に焦点を当てた研究会です。
+			<p style="text-align:right;">
+				<span style="font-size: small;">★★★★★</span>
+			</p>
+		<div class="card-content">
+			<span class="lang-ja">
+				言語実験やコーパスなど、生の<b><span class="highlight">データ</span></b>を採取し、<b><span class="highlight">定量的分析</span></b>を行う言語研究の方法論に焦点を当てた研究会です。
+			</span>
+			<span class="lang-en">
+				This seminar focuses on methodologies for linguistic research that involve collecting empirical <b><span class="highlight">data</span></b> through language experiments, corpora, and other sources, and conducting <b><span class="highlight">quantitative analyses</span></b>.
+			</span>
 		</div>
-		
     </div>
 	
     </div>
@@ -2011,12 +2015,28 @@ td.hw-past a.btn-video:hover {
   </div>
 <div id="schedule" class="tab-content active">
   <div class="wrap">
-	スケジュールは暫定版で、今後変更されることがありうることに注意してください。
+	<span class="lang-ja">
+		スケジュールは暫定版で、今後変更されることがありうることに注意してください。
+	</span>
+	<span class="lang-en">
+		Please note that this schedule is provisional and may be subject to change.
+	</span>
     <div class="card">
 		<div class="controls">
 			</div>
             <select id="sessionSelect" aria-label="Select session" style="display: none;"></select>
-			<input type="search" id="searchBox" placeholder="検索">
+			<input 
+				type="search" 
+				id="searchBox" 
+				class="lang-ja" 
+				placeholder="検索"
+			>
+			<input 
+				type="search" 
+				id="searchBox-en" 
+				class="lang-en" 
+				placeholder="Search"
+			>
 		</div>
 		<div class="card" style="margin-top:14px;padding:10px;color:#1e40af;font-weight:600" id="generalComment">
 			
@@ -2032,11 +2052,26 @@ td.hw-past a.btn-video:hover {
         </colgroup>
         <thead>
             <tr>
-                <th class="col1"><span class="lang-ja">授業回</span><span class="lang-en">Class</span></th>
-                <th class="col-date"><span class="lang-ja">日付</span><span class="lang-en">date</span></th>
-                <th class="col-chapter"><span class="lang-ja">章</span><span class="lang-en">Chapter</span></th> 
-				<th class="col2"><span class="lang-ja">授業内講義</span><span class="lang-en">Lecture</span></th>
-                <th class="col3"><span class="lang-ja">課題</span><span class="lang-en">HW</span></th>
+                <th class="col1">
+					<span class="lang-ja">授業回</span>
+					<span class="lang-en">Class</span>
+				</th>
+                <th class="col-date">
+					<span class="lang-ja">日付</span>
+					<span class="lang-en">Date</span>
+				</th>
+                <th class="col-chapter">
+					<span class="lang-ja">章</span>
+					<span class="lang-en">Chapter</span>
+				</th> 
+				<th class="col2">
+					<span class="lang-ja">授業内講義</span>
+					<span class="lang-en">Lecture</span>
+				</th>
+                <th class="col3">
+					<span class="lang-ja">課題</span>
+					<span class="lang-en">HW</span>
+				</th>
             </tr>
         </thead>
     <tbody></tbody>
@@ -2046,22 +2081,31 @@ td.hw-past a.btn-video:hover {
              </div>
         <div id="sessionOverviewContainer" style="display: none;">
             <section class="session-panel muted-panel" id="panelLast">
-                <h2>前回</h2>
+                <h2>
+					<span class="lang-ja">前回</span>
+					<span class="lang-en">Previous Class</span>
+				</h2>
                 <div class="tablewrap">
                     </div>
             </section>
             <section class="session-panel" id="panelNext">
-                <h2>次回</h2>
+                <h2>
+					<span class="lang-ja">次回</span>
+					<span class="lang-en">Next Class</span>
+				</h2>
                 <div class="tablewrap">
                      </div>
             </section>
             <section class="session-panel muted-panel" id="panelAfterNext">
-                <h2>次々回</h2>
+                <h2>
+					<span class="lang-ja">次々回</span>
+					<span class="lang-en">Class After Next</span>
+				</h2>
                 <div class="tablewrap">
                     </div>
             </section>
         </div>
-        </div>
+    </div>
   
    <p></p>
   </div>
@@ -2092,7 +2136,7 @@ const scheduleData =
 [
   {
     "session": "Part",
-    "class": "<b><span class=\"lang-ja\"> 第一部　コーパス言語学とは？ <\/span><span class=\"lang-en\"> Part I What is corpus linguistics? <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "class": "<b><span class=\"lang-ja\"> 第一部　イントロダクションとデータ <\/span><span class=\"lang-en\"> Part I What is corpus linguistics? <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
     "ClassEn": "Part I What is corpus linguistics?",
     "handson": "",
     "handsonEn": "",
@@ -2105,34 +2149,21 @@ const scheduleData =
   },
   {
     "session": "1",
-    "class": "<b><span class=\"lang-ja\"> コースガイダンス <\/span><span class=\"lang-en\"> Course orientation <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "class": "<b><span class=\"lang-ja\"> イントロダクション <\/span><span class=\"lang-en\"> Course orientation <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・生データを取る <\/span><span class=\"lang-en\">  <\/span><\/font> ",
     "ClassEn": "Course orientation",
-    "handson": "",
+    "handson": "・生データを取る",
     "handsonEn": "",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/10/5",
-    "handout": "Assignment 1 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_c6070fab55144944a2a4c710af1366b0.pdf>, Assignment 1 (docx)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_ef0f92d5e063453b98fbb834831fe141.docx>, Slides (Class 2)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_00d57b08245c49f5a9d981ee3f163a4c.pdf>,Don't open the following until you are instructed, Exercise 7<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_3ceb587949ba431ea058b6767c79e6d7.pdf>",
+    "handout": "Reading Assingment 1 (due :  11:59 pm 10/12)\nOshita (2000: pp.293-296)\n- Section 1: Introduction ",
     "deadlineClass": "2026/10/5[13:00:00]",
-    "deadlineHW": "2026/10/12[14:30:00]",
+    "deadlineHW": "2026/10/12[00:00:00]",
     "date2": "2026/10/5"
   },
   {
-    "session": "2",
-    "class": "<b><span class=\"lang-ja\"> 事例紹介とリサーチクエスチョン <\/span><span class=\"lang-en\"> Case Studies & Research Questions <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> リサーチクエスチョンと統計手法 <\/span><span class=\"lang-en\"> Research Questions & Statistical Models <\/span><\/font> ",
-    "ClassEn": "Case Studies & Research Questions",
-    "handson": "リサーチクエスチョンと統計手法",
-    "handsonEn": "Research Questions & Statistical Models",
-    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
-    "date": "<font color = \"red\">2026/10/12<\/font>",
-    "handout": "Assignment 2 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_06d96766e8624f6bab0d76a67fcfdc33.pdf>, Assignment 2 (docx) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_8ec2a39e88314c329df62db239970c20.docx>, Slides (Class 3)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_e475a64b943f43049ecd76707750b7cd.pdf>",
-    "deadlineClass": "2026/10/12[13:00:00]",
-    "deadlineHW": "2026/10/19[14:30:00]",
-    "date2": "<font color = \"red\">2026/10/12<\/font>"
-  },
-  {
     "session": "Part",
-    "class": "<b><span class=\"lang-ja\"> 第二部 定量的なコーパス研究 <\/span><span class=\"lang-en\"> Part II Quantitative Corpus Research <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Part II Quantitative Corpus Research",
+    "class": "<b><span class=\"lang-ja\"> 第二部 アノテーションの基礎１：単語 <\/span><span class=\"lang-en\"> Part II Annotation 1: Lexical information <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Part II Annotation 1: Lexical information",
     "handson": "",
     "handsonEn": "",
     "format": "",
@@ -2143,48 +2174,87 @@ const scheduleData =
     "date2": ""
   },
   {
+    "session": "2",
+    "class": "<b><span class=\"lang-ja\"> タグ付け１：英語 <\/span><span class=\"lang-en\"> Tagging 1: English <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioXML Editorを使ってタグ付け <\/span><span class=\"lang-en\">  - Annotating the text using KeioXML Editor <\/span><\/font> ",
+    "ClassEn": "Tagging 1: English",
+    "handson": "・KeioXML Editorを使ってタグ付け",
+    "handsonEn": " - Annotating the text using KeioXML Editor",
+    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
+    "date": "<font color = \"red\">2026/10/12<\/font>",
+    "handout": "Reading Assingment 2  (due :  11:59 pm 10/19)\nOshita (2000: pp.296-301)\n- Section 2: Previous analyses 1 & 2",
+    "deadlineClass": "2026/10/12[13:00:00]",
+    "deadlineHW": "2026/10/19[00:00:00]",
+    "date2": "<font color = \"red\">2026/10/12<\/font>"
+  },
+  {
     "session": "3",
-    "class": "<b><span class=\"lang-ja\"> 先行研究とは <\/span><span class=\"lang-en\"> What is Previous literature? <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> 線形モデル <\/span><span class=\"lang-en\"> Linear Models <\/span><\/font> ",
-    "ClassEn": "What is Previous literature?",
-    "handson": "線形モデル",
-    "handsonEn": "Linear Models",
+    "class": "<b><span class=\"lang-ja\"> タグ付け２：日本語 <\/span><span class=\"lang-en\"> Tagging 2: Japanese <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioXML Editorを使ってタグ付け <\/span><span class=\"lang-en\">  - Annotating the text using KeioXML Editor <\/span><\/font> ",
+    "ClassEn": "Tagging 2: Japanese",
+    "handson": "・KeioXML Editorを使ってタグ付け",
+    "handsonEn": " - Annotating the text using KeioXML Editor",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/10/19",
-    "handout": "",
+    "handout": "Reading Assingment 3  (due :  11:59 pm 10/26)\nOshita (2000: pp.301-304)\n- Section 2: Previous analyses 3 through 5",
     "deadlineClass": "2026/10/19[13:00:00]",
-    "deadlineHW": "2026/10/26[14:30:00]",
+    "deadlineHW": "2026/10/26[00:00:00]",
     "date2": "2026/10/19"
   },
   {
+    "session": "Part",
+    "class": "<b><span class=\"lang-ja\"> 第三部 アノテーションの基礎２：文構造 <\/span><span class=\"lang-en\"> Part III Annotation 2: Universal Dependencies <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Part III Annotation 2: Universal Dependencies",
+    "handson": "",
+    "handsonEn": "",
+    "format": "",
+    "date": "",
+    "handout": "",
+    "deadlineClass": "",
+    "deadlineHW": "",
+    "date2": ""
+  },
+  {
     "session": "4",
-    "class": "<b><span class=\"lang-ja\"> 先行研究の探し方 <\/span><span class=\"lang-en\"> Finding your own research background <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> 一般化線形モデル <\/span><span class=\"lang-en\"> Generalized Linear Models <\/span><\/font> ",
-    "ClassEn": "Finding your own research background",
-    "handson": "一般化線形モデル",
-    "handsonEn": "Generalized Linear Models",
+    "class": "<b><span class=\"lang-ja\"> UD1:英語 <\/span><span class=\"lang-en\"> UD1: English <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioXML Editorを使ってタグ付け <\/span><span class=\"lang-en\">  - Annotating the text using KeioXML Editor <\/span><\/font> ",
+    "ClassEn": "UD1: English",
+    "handson": "・KeioXML Editorを使ってタグ付け",
+    "handsonEn": " - Annotating the text using KeioXML Editor",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/10/26",
-    "handout": "Optional extra credit assignment:  you will earn extra points if you solve and submit it (Due 23:59 Nov 21). , Bonus HW (docx) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_9f783657cb44431c8e46016cc31ee476.docx>, Bonus HW (pdf) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_9878d8a6b3054c69acb997ecc5599595.pdf>",
+    "handout": "Reading Assingment 4  (due :  11:59 pm 11/2)\nOshita (2000: pp.306-310)\n- Section 3: The corpus study",
     "deadlineClass": "2026/10/26[13:00:00]",
-    "deadlineHW": "2026/11/2[14:30:00]",
+    "deadlineHW": "2026/11/2[00:00:00]",
     "date2": "2026/10/26"
   },
   {
     "session": "5",
-    "class": "<b><span class=\"lang-ja\"> コーパスの種類 <\/span><span class=\"lang-en\"> Types of corpora <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> 一般化線形混合効果モデル <\/span><span class=\"lang-en\"> Generalized Linear Mixed Effects Models <\/span><\/font> ",
-    "ClassEn": "Types of corpora",
-    "handson": "一般化線形混合効果モデル",
-    "handsonEn": "Generalized Linear Mixed Effects Models",
+    "class": "<b><span class=\"lang-ja\"> UD2:日本語 <\/span><span class=\"lang-en\"> UD2: Japanese <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioXML Editorを使ってタグ付け <\/span><span class=\"lang-en\">  - Annotating the text using KeioXML Editor <\/span><\/font> ",
+    "ClassEn": "UD2: Japanese",
+    "handson": "・KeioXML Editorを使ってタグ付け",
+    "handsonEn": " - Annotating the text using KeioXML Editor",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/11/2",
-    "handout": "Slides (class 5)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_c01d1e7b9f294f24bbd0bcec0cc5c4cf.pdf>",
+    "handout": "Reading Assingment 5  (due :  11:59 pm 11/9)\nOshita (2000: pp.310-313)\n- Section 4: Reevaluation (1 to 2)\n",
     "deadlineClass": "2026/11/2[13:00:00]",
-    "deadlineHW": "2026/11/9[14:30:00]",
+    "deadlineHW": "2026/11/9[00:00:00]",
     "date2": "2026/11/2"
   },
   {
+    "session": "6",
+    "class": "<b><span class=\"lang-ja\"> アノテーション予備日 <\/span><span class=\"lang-en\"> An extra day for annotation <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioXML Editorを使ってタグ付け <\/span><span class=\"lang-en\">  - Annotating the text using KeioXML Editor <\/span><\/font> ",
+    "ClassEn": "An extra day for annotation",
+    "handson": "・KeioXML Editorを使ってタグ付け",
+    "handsonEn": " - Annotating the text using KeioXML Editor",
+    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
+    "date": "2026/11/9",
+    "handout": "Reading Assingment 6  (due :  11:59 pm 11/16)\nOshita (2000: pp.313-317)\n- Section 4: Reevaluation (3 to 5)\n",
+    "deadlineClass": "2026/11/9[13:00:00]",
+    "deadlineHW": "2026/11/16[00:00:00]",
+    "date2": "2026/11/9"
+  },
+  {
     "session": "Part",
-    "class": "<b><span class=\"lang-ja\"> 第三部 定性的なコーパス研究 <\/span><span class=\"lang-en\"> Part III Qualitative Corpus Research <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Part III Qualitative Corpus Research",
+    "class": "<b><span class=\"lang-ja\"> 第四部 質的なリサーチを行う <\/span><span class=\"lang-en\"> Conducting your own research <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Conducting your own research",
     "handson": "",
     "handsonEn": "",
     "format": "",
@@ -2195,29 +2265,16 @@ const scheduleData =
     "date2": ""
   },
   {
-    "session": "6",
-    "class": "<b><span class=\"lang-ja\"> グループワーク <\/span><span class=\"lang-en\"> Group Project <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> コンコーダンス作成（１） <\/span><span class=\"lang-en\"> Concordance (Part 1) <\/span><\/font> ",
-    "ClassEn": "Group Project",
-    "handson": "コンコーダンス作成（１）",
-    "handsonEn": "Concordance (Part 1)",
-    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
-    "date": "2026/11/9",
-    "handout": "Answer key (Assgn 4)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_7dded8a5ed5842f183636c03f0d5148f.pdf>[after 11/08/2025]",
-    "deadlineClass": "2026/11/9[13:00:00]",
-    "deadlineHW": "2026/11/16[14:30:00]",
-    "date2": "2026/11/9"
-  },
-  {
     "session": "7",
-    "class": "<b><span class=\"lang-ja\"> グループワーク <\/span><span class=\"lang-en\"> Group Project <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> コンコーダンス作成（２） <\/span><span class=\"lang-en\"> Concordance (Part 1) <\/span><\/font> ",
-    "ClassEn": "Group Project",
-    "handson": "コンコーダンス作成（２）",
-    "handsonEn": "Concordance (Part 1)",
+    "class": "<b><span class=\"lang-ja\"> RQを立てる <\/span><span class=\"lang-en\"> Research question <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioSFC X-searchを使って検索\n・グループ決め <\/span><span class=\"lang-en\">  - Investigating a corpus using KeioSFC X-search\n - Forming groups <\/span><\/font> ",
+    "ClassEn": "Research question",
+    "handson": "・KeioSFC X-searchを使って検索\n・グループ決め",
+    "handsonEn": " - Investigating a corpus using KeioSFC X-search\n - Forming groups",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/11/16",
-    "handout": "Assignment 5 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_85effd18ccc1431e8275d7a822555a57.pdf>, Assignment 5 (docx) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_f2d31936e80849728a1e178e9293d76a.docx> , Slides (Class 7)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_bfbc147f673a42349926cee167179805.pdf>[after 11/15/2025]",
+    "handout": "Reading Assingment 7  (due :  11:59 pm 11/23)\nOshita (2000: pp.317-320)\n- Section 5: NP movement\n- Section 6: Conclusion\n",
     "deadlineClass": "2026/11/16[13:00:00]",
-    "deadlineHW": "2026/11/23[14:30:00]",
+    "deadlineHW": "2026/11/23[00:00:00]",
     "date2": "2026/11/16"
   },
   {
@@ -2228,14 +2285,40 @@ const scheduleData =
     "handsonEn": "",
     "format": " ",
     "date": "<font color = \"red\">2026/11/23<\/font>",
-    "handout": "Answer key for Bonus HW<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_7975e806d52a4b449d8a978369c51be3.pdf>[after 11/22/2025]",
+    "handout": "",
     "deadlineClass": "2026/11/23[13:00:00]",
-    "deadlineHW": "2026/11/30[14:30:00]",
+    "deadlineHW": "2026/11/30[00:00:00]",
     "date2": "<font color = \"red\">2026/11/23<\/font>"
   },
   {
+    "session": "8",
+    "class": "<b><span class=\"lang-ja\"> 中間言語分析1 <\/span><span class=\"lang-en\"> Analysis of Interlanguage 1 <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioSFC X-searchを使って検索 <\/span><span class=\"lang-en\">  - Investigating a corpus using KeioSFC X-search <\/span><\/font> ",
+    "ClassEn": "Analysis of Interlanguage 1",
+    "handson": "・KeioSFC X-searchを使って検索",
+    "handsonEn": " - Investigating a corpus using KeioSFC X-search",
+    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
+    "date": "2026/11/30",
+    "handout": "",
+    "deadlineClass": "2026/11/30[13:00:00]",
+    "deadlineHW": "2026/12/7[14:30:00]",
+    "date2": "2026/11/30"
+  },
+  {
+    "session": "9",
+    "class": "<b><span class=\"lang-ja\"> 中間言語分析2 <\/span><span class=\"lang-en\"> Analysis of Interlanguage 2 <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\"> ・KeioSFC X-searchを使って検索 <\/span><span class=\"lang-en\">  - Investigating a corpus using KeioSFC X-search <\/span><\/font> ",
+    "ClassEn": "Analysis of Interlanguage 2",
+    "handson": "・KeioSFC X-searchを使って検索",
+    "handsonEn": " - Investigating a corpus using KeioSFC X-search",
+    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
+    "date": "2026/12/7",
+    "handout": "",
+    "deadlineClass": "2026/12/7[13:00:00]",
+    "deadlineHW": "2026/12/14[14:30:00]",
+    "date2": "2026/12/7"
+  },
+  {
     "session": "Part",
-    "class": "<b><span class=\"lang-ja\"> 第四部 論文を執筆する <\/span><span class=\"lang-en\"> Part IV Academic Writing <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "class": "<b><span class=\"lang-ja\"> 第五部 論文を執筆する <\/span><span class=\"lang-en\"> Part IV Academic Writing <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
     "ClassEn": "Part IV Academic Writing",
     "handson": "",
     "handsonEn": "",
@@ -2247,66 +2330,40 @@ const scheduleData =
     "date2": ""
   },
   {
-    "session": "8",
-    "class": "<b><span class=\"lang-ja\"> Sections 2 & 3 先行研究と分析手法をまとめる <\/span><span class=\"lang-en\"> Sections 2 & 3 Summarizing previous literature & Research Method <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Sections 2 & 3 Summarizing previous literature & Research Method",
-    "handson": "",
-    "handsonEn": "",
-    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
-    "date": "2026/11/30",
-    "handout": "Assignment 6 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_611aad0fbf034f43aee620c92a86e026.pdf>, Assignment 6 (docx) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_9b1cf07032c047fcbc97dadf94bd094f.docx>, Answer key (Assgn 6)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_f08fdbef452a4ad5b25935c85f2998f5.pdf>[after 11/29/2025]",
-    "deadlineClass": "2026/11/30[13:00:00]",
-    "deadlineHW": "2026/12/7[14:30:00]",
-    "date2": "2026/11/30"
-  },
-  {
-    "session": "9",
-    "class": "<b><span class=\"lang-ja\"> Section 4 結果と可視化 <\/span><span class=\"lang-en\"> Results & Vidualization <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Results & Vidualization",
-    "handson": "",
-    "handsonEn": "",
-    "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
-    "date": "2026/12/7",
-    "handout": "Answer key for Assgn 7 <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_cbf8cd1966a44418a7decd19187e7f55.pdf>[after 13:00 12/05/2025], Assignment 8 (docx)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_ac5f15fcd9d344c8bfaf43c2f895d24d.docx>, Assignment 8 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_8f8b54339f0746c99d9e88309a97b8b1.pdf>, Answer key for Assgn 8<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_81a20de288c44d74a54f3e6ac175b457.pdf>[after 12/06/2025]",
-    "deadlineClass": "2026/12/7[13:00:00]",
-    "deadlineHW": "2026/12/14[14:30:00]",
-    "date2": "2026/12/7"
-  },
-  {
     "session": "10",
-    "class": "<b><span class=\"lang-ja\"> Section 5 ディスカッション <\/span><span class=\"lang-en\"> Discussion <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Discussion",
+    "class": "<b><span class=\"lang-ja\"> 論文・プレゼン準備①：先行研究とデータ <\/span><span class=\"lang-en\"> Prev. literature and data <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Prev. literature and data",
     "handson": "",
     "handsonEn": "",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/12/14",
-    "handout": "Assignment 9 (pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_e37324e7fbfc48889a5a91d5448634b6.pdf>, Assignment 9 (docx)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_f2d8f5c9b2f34d1da1af1108f82933c1.docx>, Answer key for Assgn 9<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_6a85fcce55dc41cb9f687415375d14cf.pdf>[after 12/13/2025]",
+    "handout": "",
     "deadlineClass": "2026/12/14[13:00:00]",
     "deadlineHW": "2026/12/21[14:30:00]",
     "date2": "2026/12/14"
   },
   {
     "session": "11",
-    "class": "<b><span class=\"lang-ja\"> Sections 1 & 6 イントロダクションとまとめ <\/span><span class=\"lang-en\"> Sections 1 & 6 Introduction & conclusion <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Sections 1 & 6 Introduction & conclusion",
+    "class": "<b><span class=\"lang-ja\"> 論文・プレゼン準備②：分析と議論 <\/span><span class=\"lang-en\"> Analysis and discussion <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Analysis and discussion",
     "handson": "",
     "handsonEn": "",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2026/12/21",
-    "handout": "Answer key for Assgn 10<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_63090de3504940acbb19238069f82323.pdf>[after 12/10/2025]",
+    "handout": "",
     "deadlineClass": "2026/12/21[13:00:00]",
     "deadlineHW": "2027/1/8[14:30:00]",
     "date2": "2026/12/21"
   },
   {
     "session": "12",
-    "class": "<b><span class=\"lang-ja\"> 発表予行練習 <\/span><span class=\"lang-en\"> Practice day for your presentation <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "Practice day for your presentation",
+    "class": "<b><span class=\"lang-ja\"> 論文・プレゼン準備③：イントロダクションとまとめ <\/span><span class=\"lang-en\"> Introduction & conclusion <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
+    "ClassEn": "Introduction & conclusion",
     "handson": "",
     "handsonEn": "",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "<font color = \"red\">2027/1/8<\/font>",
-    "handout": "Assignment 11 (docx)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_0e997486b64c4e17ba12f2a1d987b744.docx>, Assignment 11(pdf)<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_966287b96db24221b0750f8199e09b4d.pdf>, Answer key for Assgn 11<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_a8363bf1809c4e7eb56e57452b0b75ca.pdf>[after 12/26/2025]",
+    "handout": "",
     "deadlineClass": "2027/1/8[13:00:00]",
     "deadlineHW": "2027/1/18[14:30:00]",
     "date2": "<font color = \"red\">2027/1/8<\/font>"
@@ -2332,7 +2389,7 @@ const scheduleData =
     "handsonEn": "",
     "format": "<span class=\"lang-ja\">（対面）<\/span><span class=\"lang-en\">face-to-face<\/span>",
     "date": "2027/1/18",
-    "handout": "Assignment 12 (pdf) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_f6b1862e65ba4a629c1aa2d91b421e81.pdf>, Assignment 12 (docx) <https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_03568765bca54a96b70983fe0b8b81f5.docx>, Answer key for Assgn 12\t<https://91fefc4d-047b-4ea2-946f-b7b816f5c8be.usrfiles.com/ugd/91fefc_12aa6c533fa2486d82158797a9c440f4.pdf>[after 01/08/2026]",
+    "handout": "",
     "deadlineClass": "2027/1/18[13:00:00]",
     "deadlineHW": "2027/1/25[14:30:00]",
     "date2": "2027/1/18"
@@ -2349,19 +2406,6 @@ const scheduleData =
     "deadlineClass": "2027/1/25[13:00:00]",
     "deadlineHW": "",
     "date2": "2027/1/25"
-  },
-  {
-    "session": "",
-    "class": "<b><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/b>\n<span> <\/span>\n<font color = \"gray\"><span class=\"lang-ja\">  <\/span><span class=\"lang-en\">  <\/span><\/font> ",
-    "ClassEn": "",
-    "handson": "",
-    "handsonEn": "",
-    "format": "",
-    "date": "",
-    "handout": "",
-    "deadlineClass": "",
-    "deadlineHW": "",
-    "date2": ""
   }
 ]
 ;
